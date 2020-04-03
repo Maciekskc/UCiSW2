@@ -8,3 +8,6 @@ Maciej Białkowski.
 
 Opiekun projektu
 dr inż. Jacek Mazurkiewicz.
+
+Link do sprawozdania
+https://www.overleaf.com/9713713223nrvfgmnmctjw
