@@ -1,8 +1,19 @@
-V3 4
-EN work/PianoProject 0 \
+V3 11
+FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/Keyboard.vhd 2020/04/08.20:02:18 P.20131013
+AR work/Keyboard/Behavioral 0 \
+      FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/Keyboard.vhd \
+      EN work/Keyboard 0
+EN work/PianoKey 1586368961 \
+      FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/Keyboard.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/PianoKey/Behavioral 1586368962 \
+      FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/Keyboard.vhd \
+      EN work/PianoKey 1586368961
+FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf 2020/04/08.19:41:45 P.20131013
+EN work/PianoProject 1586367712 \
       FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/PianoProject/BEHAVIORAL 0 \
+AR work/PianoProject/BEHAVIORAL 1586367713 \
       FL C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf \
-      EN work/PianoProject 0
+      EN work/PianoProject 1586367712 CP PS2_Kbd CP DACWrite

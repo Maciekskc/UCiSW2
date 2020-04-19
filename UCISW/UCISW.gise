@@ -22,31 +22,133 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="UCISW.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Keyboard.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Keyboard.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Keyboard.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PianoKey.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PianoKey.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PianoKey.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PianoKey_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PianoKey_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="PianoProject.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PianoProject.cmd_log"/>
     <file xil_pn:fileType="FILE_JHD" xil_pn:name="PianoProject.jhd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PianoProject.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="PianoProject.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="PianoProject.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="PianoProject.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PianoProject.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="PianoProject.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="PianoProject.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="PianoProject.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PianoProject.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="PianoProject.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PianoProject.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PianoProject.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PianoProject.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="PianoProject.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="PianoProject.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="PianoProject.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="PianoProject.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="PianoProject.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="PianoProject.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PianoProject.xst"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="PianoProject_drc.vhf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PianoProject_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="PianoProject_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="PianoProject_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="PianoProject_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="PianoProject_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="PianoProject_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PianoProject_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PianoProject_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="PianoProject_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="PianoProject_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PianoProject_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PianoProject_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PianoProject_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="PianoProject_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PianoProject_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PianoProject_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testForPianoKey_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testForPianoKey_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testForPianoKey_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testForPianoKey_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1587312969" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1587312969">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312987" xil_pn:in_ck="-3790335740661465352" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587312987">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Keyboard.vhd"/>
+      <outfile xil_pn:name="testForPianoKey.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312969" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7845950980371137245" xil_pn:start_ts="1587312969">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312971" xil_pn:in_ck="1681879878576940346" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6690157133064320543" xil_pn:start_ts="1587312969">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PianoProject.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312971" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7962375649228834019" xil_pn:start_ts="1587312971">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312987" xil_pn:in_ck="7462528975303675800" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1587312987">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Keyboard.vhd"/>
+      <outfile xil_pn:name="PianoProject.vhf"/>
+      <outfile xil_pn:name="testForPianoKey.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312991" xil_pn:in_ck="7462528975303675800" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2275895921622971804" xil_pn:start_ts="1587312987">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="testForPianoKey_beh.prj"/>
+      <outfile xil_pn:name="testForPianoKey_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1587312991" xil_pn:in_ck="6562118645115976037" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="476708185900734121" xil_pn:start_ts="1587312991">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="testForPianoKey_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1585911098" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1585911098">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1585911100" xil_pn:in_ck="1681879878576940346" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5136624232386404509" xil_pn:start_ts="1585911098">
+    <transform xil_pn:end_ts="1586367706" xil_pn:in_ck="1681879878576940346" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5136624232386404509" xil_pn:start_ts="1586367703">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="PianoProject.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1585911100" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7962375649228834019" xil_pn:start_ts="1585911100">
@@ -64,23 +166,25 @@
     <transform xil_pn:end_ts="1585911100" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1585911100">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1585911100" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1698402848074169555" xil_pn:start_ts="1585911100">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1585911107" xil_pn:in_ck="1681879878576943776" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8614628679444518688" xil_pn:start_ts="1585911100">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1586367720" xil_pn:in_ck="5757651039126521761" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8614628679444518688" xil_pn:start_ts="1586367706">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PianoProject.jhd"/>
       <outfile xil_pn:name="PianoProject.lso"/>
+      <outfile xil_pn:name="PianoProject.ngc"/>
+      <outfile xil_pn:name="PianoProject.ngr"/>
       <outfile xil_pn:name="PianoProject.prj"/>
+      <outfile xil_pn:name="PianoProject.stx"/>
       <outfile xil_pn:name="PianoProject.syr"/>
       <outfile xil_pn:name="PianoProject.xst"/>
       <outfile xil_pn:name="PianoProject_vhdl.prj"/>
@@ -92,7 +196,55 @@
     <transform xil_pn:end_ts="1585911107" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8901421012520945424" xil_pn:start_ts="1585911107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586367728" xil_pn:in_ck="-425876535729724776" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2636324783560474896" xil_pn:start_ts="1586367720">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="PianoProject.bld"/>
+      <outfile xil_pn:name="PianoProject.ngd"/>
+      <outfile xil_pn:name="PianoProject_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1586367738" xil_pn:in_ck="1681879878576935029" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1586367728">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="PianoProject.pcf"/>
+      <outfile xil_pn:name="PianoProject_map.map"/>
+      <outfile xil_pn:name="PianoProject_map.mrp"/>
+      <outfile xil_pn:name="PianoProject_map.ncd"/>
+      <outfile xil_pn:name="PianoProject_map.ngm"/>
+      <outfile xil_pn:name="PianoProject_map.xrpt"/>
+      <outfile xil_pn:name="PianoProject_summary.xml"/>
+      <outfile xil_pn:name="PianoProject_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1586367757" xil_pn:in_ck="4017770005181927950" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1586367738">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="PianoProject.ncd"/>
+      <outfile xil_pn:name="PianoProject.pad"/>
+      <outfile xil_pn:name="PianoProject.par"/>
+      <outfile xil_pn:name="PianoProject.ptwx"/>
+      <outfile xil_pn:name="PianoProject.unroutes"/>
+      <outfile xil_pn:name="PianoProject.xpi"/>
+      <outfile xil_pn:name="PianoProject_pad.csv"/>
+      <outfile xil_pn:name="PianoProject_pad.txt"/>
+      <outfile xil_pn:name="PianoProject_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1586367757" xil_pn:in_ck="1681879878576934897" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1586367754">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="PianoProject.twr"/>
+      <outfile xil_pn:name="PianoProject.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 

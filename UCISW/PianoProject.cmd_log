@@ -1,1 +1,8 @@
 xst -intstyle ise -ifn "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.xst" -ofn "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.syr" 
+xst -intstyle ise -ifn "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.xst" -ofn "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 PianoProject.ngc PianoProject.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PianoProject_map.ncd PianoProject.ngd PianoProject.pcf 
+par -w -intstyle ise -ol high -t 1 PianoProject_map.ncd PianoProject.ncd PianoProject.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PianoProject.twx PianoProject.ncd -o PianoProject.twr PianoProject.pcf 
+sch2sym -intstyle ise -family spartan3e -refsym PianoProject C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.sch C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl PianoProject_drc.vhf -w C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.sch 
