@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.40 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -105,19 +105,18 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf" in Library work.
-Entity <PianoProject> compiled.
-Entity <PianoProject> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity pianoproject is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <PianoProject> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <PianoProject> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <PianoProject> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <PianoProject> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf" line 84: Unconnected output port 'E0' of component 'PS2_Kbd'.
 WARNING:Xst:753 - "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf" line 84: Unconnected output port 'F0' of component 'PS2_Kbd'.
 WARNING:Xst:753 - "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoProject.vhf" line 84: Unconnected output port 'DO_Rdy' of component 'PS2_Kbd'.
@@ -402,11 +401,11 @@ Delay:               7.126ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.51 secs
+Total CPU time to Xst completion: 8.31 secs
  
 --> 
 
-Total memory usage is 4522520 kilobytes
+Total memory usage is 4522532 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   12 (   0 filtered)

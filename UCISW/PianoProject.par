@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-8OHNG4I::  Wed Apr 08 19:42:20 2020
+DESKTOP-8OHNG4I::  Sun Apr 26 15:57:29 2020
 
 par -w -intstyle ise -ol high -t 1 PianoProject_map.ncd PianoProject.ncd
 PianoProject.pcf 
@@ -68,20 +68,20 @@ Phase 3.31  Local Placement Optimization (Checksum:60) REAL time: 3 secs
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:c05f226) REAL time: 3 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:c05f226) REAL time: 4 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:c05f226) REAL time: 3 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:c05f226) REAL time: 4 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:c05f226) REAL time: 3 secs 
+Phase 6.36  Local Placement Optimization (Checksum:c05f226) REAL time: 4 secs 
 
 Phase 7.3  Local Placement Optimization
 
-Phase 7.3  Local Placement Optimization (Checksum:8ffaae6d) REAL time: 3 secs 
+Phase 7.3  Local Placement Optimization (Checksum:8ffaae6d) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:8ffaae6d) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:8ffaae6d) REAL time: 4 secs 
 
 Phase 9.8  Global Placement
 ................................
@@ -117,7 +117,7 @@ Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1
 
 Updating file: PianoProject.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
@@ -188,7 +188,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 11 secs 
 Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  4450 MB
+Peak Memory Usage:  4449 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
