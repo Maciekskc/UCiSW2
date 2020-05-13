@@ -1,0 +1,9 @@
+[Inputs]
+Clr
+Clk
+F0
+K_rdy
+=In_key[7:0]=
+[Outputs]
+=FName[7:0]=
+[BiDir]

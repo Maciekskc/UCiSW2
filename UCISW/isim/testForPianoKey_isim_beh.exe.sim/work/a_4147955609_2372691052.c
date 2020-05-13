@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey.vhd";
+static const char *ng0 = "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForPianoKey.vhd";
 
 
 
@@ -129,9 +129,9 @@ LAB6:    *((char **)t1) = &&LAB7;
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(98, ng0);
-    t2 = (t0 + 6972);
+    t2 = (t0 + 7436);
     *((int *)t2) = 0;
-    t4 = (t0 + 6976);
+    t4 = (t0 + 7440);
     *((int *)t4) = 16;
     t5 = 0;
     t6 = 16;
@@ -156,23 +156,23 @@ LAB9:    xsi_set_current_line(100, ng0);
 LAB14:    *((char **)t1) = &&LAB15;
     goto LAB1;
 
-LAB10:    t2 = (t0 + 6972);
+LAB10:    t2 = (t0 + 7436);
     t5 = *((int *)t2);
-    t4 = (t0 + 6976);
+    t4 = (t0 + 7440);
     t6 = *((int *)t4);
     if (t5 == t6)
         goto LAB11;
 
 LAB36:    t8 = (t5 + 1);
     t5 = t8;
-    t7 = (t0 + 6972);
+    t7 = (t0 + 7436);
     *((int *)t7) = t5;
     goto LAB8;
 
 LAB12:    xsi_set_current_line(102, ng0);
     t2 = (t0 + 2248U);
     t4 = *((char **)t2);
-    t2 = (t0 + 6972);
+    t2 = (t0 + 7436);
     t8 = *((int *)t2);
     t9 = (t8 - 0);
     t10 = (t9 * 1);

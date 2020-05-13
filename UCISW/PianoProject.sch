@@ -10,53 +10,23 @@
         <signal name="Clk_50MHz" />
         <signal name="PS2_Clk" />
         <signal name="PS2_Data" />
-        <signal name="XLXN_32" />
+        <signal name="XLXN_91" />
+        <signal name="XLXN_92" />
         <signal name="DAC_CLR" />
-        <signal name="XLXN_34" />
         <signal name="DAC_CS" />
-        <signal name="XLXN_36" />
         <signal name="SPI_SCK" />
-        <signal name="XLXN_38" />
         <signal name="SPI_SS_B" />
-        <signal name="XLXN_40" />
         <signal name="AMP_CS" />
-        <signal name="XLXN_42" />
         <signal name="AD_CONV" />
-        <signal name="XLXN_44" />
         <signal name="SF_CE0" />
-        <signal name="XLXN_46" />
         <signal name="FPGA_INIT_B" />
-        <signal name="XLXN_48" />
         <signal name="SPI_MISO" />
-        <signal name="XLXN_50" />
         <signal name="SPI_MOSI" />
-        <signal name="XLXN_52" />
-        <signal name="XLXN_53" />
-        <signal name="XLXN_54" />
-        <signal name="XLXN_55" />
-        <signal name="XLXN_56" />
-        <signal name="XLXN_57" />
-        <signal name="XLXN_58" />
-        <signal name="XLXN_59" />
-        <signal name="XLXN_60" />
-        <signal name="XLXN_61" />
-        <signal name="XLXN_62" />
-        <signal name="XLXN_63" />
-        <signal name="XLXN_64" />
-        <signal name="XLXN_65" />
-        <signal name="XLXN_66" />
-        <signal name="XLXN_67" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_69" />
-        <signal name="XLXN_70" />
-        <signal name="XLXN_71" />
-        <signal name="XLXN_74" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_77(7:0)" />
-        <signal name="XLXN_78" />
-        <signal name="XLXN_79" />
-        <signal name="XLXN_80(7:0)" />
+        <signal name="XLXN_136" />
+        <signal name="SDC_MOSI" />
+        <signal name="SDC_SCK" />
+        <signal name="SDC_SS" />
+        <signal name="SDC_MISO" />
         <port polarity="Input" name="Clk_Sys" />
         <port polarity="Input" name="Clk_50MHz" />
         <port polarity="Input" name="PS2_Clk" />
@@ -71,6 +41,10 @@
         <port polarity="Output" name="FPGA_INIT_B" />
         <port polarity="Input" name="SPI_MISO" />
         <port polarity="Output" name="SPI_MOSI" />
+        <port polarity="Output" name="SDC_MOSI" />
+        <port polarity="Output" name="SDC_SCK" />
+        <port polarity="Output" name="SDC_SS" />
+        <port polarity="Input" name="SDC_MISO" />
         <blockdef name="PS2_Kbd">
             <timestamp>2008-9-19T9:9:36</timestamp>
             <line x2="384" y1="-160" y2="-160" x1="320" />
@@ -109,27 +83,66 @@
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="160" y2="160" x1="64" />
         </blockdef>
-        <blockdef name="PianoKey">
-            <timestamp>2020-4-26T14:13:29</timestamp>
-            <rect width="256" x="64" y="-320" height="320" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
+        <blockdef name="WAVreader">
+            <timestamp>2011-2-18T13:15:10</timestamp>
+            <rect width="304" x="64" y="-768" height="888" />
+            <rect width="64" x="0" y="-748" height="24" />
+            <line x2="0" y1="-736" y2="-736" x1="64" />
+            <line x2="0" y1="-672" y2="-672" x1="64" />
+            <line x2="0" y1="-608" y2="-608" x1="64" />
+            <line x2="432" y1="-672" y2="-672" x1="368" />
+            <line x2="432" y1="-608" y2="-608" x1="368" />
+            <line x2="432" y1="-544" y2="-544" x1="368" />
+            <line x2="368" y1="-736" y2="-736" x1="432" />
+            <line x2="432" y1="-448" y2="-448" x1="368" />
+            <rect width="64" x="368" y="-396" height="24" />
+            <line x2="432" y1="-384" y2="-384" x1="368" />
+            <rect width="64" x="368" y="-332" height="24" />
+            <line x2="432" y1="-320" y2="-320" x1="368" />
+            <line x2="0" y1="-448" y2="-448" x1="64" />
+            <line x2="432" y1="-224" y2="-224" x1="368" />
+            <line x2="432" y1="-160" y2="-160" x1="368" />
+            <line x2="432" y1="-96" y2="-96" x1="368" />
+            <rect width="64" x="368" y="-44" height="24" />
+            <line x2="432" y1="-32" y2="-32" x1="368" />
+            <line x2="432" y1="32" y2="32" x1="368" />
+            <rect width="64" x="368" y="84" height="24" />
+            <line x2="432" y1="96" y2="96" x1="368" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-300" height="24" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <line x2="0" y1="96" y2="96" x1="64" />
         </blockdef>
         <block symbolname="PS2_Kbd" name="XLXI_1">
             <blockpin signalname="PS2_Clk" name="PS2_Clk" />
             <blockpin signalname="PS2_Data" name="PS2_Data" />
             <blockpin signalname="Clk_50MHz" name="Clk_50MHz" />
             <blockpin name="E0" />
-            <blockpin signalname="XLXN_78" name="F0" />
-            <blockpin signalname="XLXN_79" name="DO_Rdy" />
-            <blockpin signalname="XLXN_77(7:0)" name="DO(7:0)" />
+            <blockpin name="F0" />
+            <blockpin name="DO_Rdy" />
+            <blockpin name="DO(7:0)" />
             <blockpin signalname="Clk_Sys" name="Clk_Sys" />
+        </block>
+        <block symbolname="WAVreader" name="XLXI_8">
+            <blockpin name="FName(7:0)" />
+            <blockpin name="Start" />
+            <blockpin name="Abort" />
+            <blockpin signalname="SDC_MOSI" name="SDC_MOSI" />
+            <blockpin signalname="SDC_SCK" name="SDC_SCK" />
+            <blockpin signalname="SDC_SS" name="SDC_SS" />
+            <blockpin signalname="SDC_MISO" name="SDC_MISO" />
+            <blockpin name="DO_Rdy" />
+            <blockpin name="DO_L(15:0)" />
+            <blockpin name="DO_R(15:0)" />
+            <blockpin name="DO_Pop" />
+            <blockpin name="Busy" />
+            <blockpin name="FmtMnS" />
+            <blockpin name="Fmt8n16" />
+            <blockpin name="FmtSRate(15:0)" />
+            <blockpin name="SRate_Tick" />
+            <blockpin name="Error(2:0)" />
+            <blockpin name="Reset" />
+            <blockpin name="Clk_50MHz" />
+            <blockpin name="Clk_Sys" />
         </block>
         <block symbolname="DACWrite" name="XLXI_2">
             <blockpin name="Reset" />
@@ -151,102 +164,94 @@
             <blockpin signalname="Clk_50MHz" name="Clk_50MHz" />
             <blockpin signalname="Clk_Sys" name="Clk_Sys" />
         </block>
-        <block symbolname="PianoKey" name="XLXI_3">
-            <blockpin name="Clr" />
-            <blockpin name="Clk" />
-            <blockpin signalname="XLXN_78" name="F0" />
-            <blockpin signalname="XLXN_79" name="K_rdy" />
-            <blockpin signalname="XLXN_77(7:0)" name="In_key(7:0)" />
-            <blockpin name="FreqOUT(3:0)" />
-        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="Clk_50MHz">
-            <wire x2="736" y1="1520" y2="1520" x1="480" />
-            <wire x2="1552" y1="1520" y2="1520" x1="736" />
-            <wire x2="816" y1="1136" y2="1136" x1="736" />
-            <wire x2="736" y1="1136" y2="1520" x1="736" />
-            <wire x2="1552" y1="1344" y2="1520" x1="1552" />
-            <wire x2="2384" y1="1344" y2="1344" x1="1552" />
-        </branch>
-        <iomarker fontsize="28" x="480" y="1520" name="Clk_50MHz" orien="R180" />
-        <iomarker fontsize="28" x="480" y="1600" name="Clk_Sys" orien="R180" />
         <branch name="PS2_Data">
-            <wire x2="816" y1="1072" y2="1072" x1="432" />
-        </branch>
-        <branch name="DAC_CLR">
-            <wire x2="2880" y1="960" y2="960" x1="2832" />
-        </branch>
-        <branch name="DAC_CS">
-            <wire x2="2880" y1="896" y2="896" x1="2832" />
-        </branch>
-        <branch name="SPI_SCK">
-            <wire x2="2880" y1="832" y2="832" x1="2832" />
-        </branch>
-        <branch name="SPI_SS_B">
-            <wire x2="2880" y1="1024" y2="1024" x1="2832" />
-        </branch>
-        <branch name="AMP_CS">
-            <wire x2="2880" y1="1088" y2="1088" x1="2832" />
-        </branch>
-        <branch name="AD_CONV">
-            <wire x2="2880" y1="1152" y2="1152" x1="2832" />
-        </branch>
-        <branch name="SF_CE0">
-            <wire x2="2880" y1="1216" y2="1216" x1="2832" />
-        </branch>
-        <branch name="FPGA_INIT_B">
-            <wire x2="2880" y1="1280" y2="1280" x1="2832" />
-        </branch>
-        <branch name="SPI_MISO">
-            <wire x2="2880" y1="768" y2="768" x1="2832" />
-        </branch>
-        <branch name="SPI_MOSI">
-            <wire x2="2880" y1="704" y2="704" x1="2832" />
-        </branch>
-        <iomarker fontsize="28" x="2880" y="768" name="SPI_MISO" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="960" name="DAC_CLR" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="896" name="DAC_CS" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="704" name="SPI_MOSI" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="832" name="SPI_SCK" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="1024" name="SPI_SS_B" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="1088" name="AMP_CS" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="1152" name="AD_CONV" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="1216" name="SF_CE0" orien="R0" />
-        <iomarker fontsize="28" x="2880" y="1280" name="FPGA_INIT_B" orien="R0" />
-        <instance x="2384" y="1248" name="XLXI_2" orien="R0">
-        </instance>
-        <branch name="Clk_Sys">
-            <wire x2="784" y1="1600" y2="1600" x1="480" />
-            <wire x2="1616" y1="1600" y2="1600" x1="784" />
-            <wire x2="816" y1="1200" y2="1200" x1="784" />
-            <wire x2="784" y1="1200" y2="1600" x1="784" />
-            <wire x2="1616" y1="1408" y2="1600" x1="1616" />
-            <wire x2="2384" y1="1408" y2="1408" x1="1616" />
+            <wire x2="560" y1="1072" y2="1072" x1="208" />
         </branch>
         <branch name="PS2_Clk">
-            <wire x2="816" y1="1008" y2="1008" x1="432" />
+            <wire x2="560" y1="1008" y2="1008" x1="208" />
         </branch>
-        <iomarker fontsize="28" x="432" y="1008" name="PS2_Clk" orien="R180" />
-        <iomarker fontsize="28" x="432" y="1072" name="PS2_Data" orien="R180" />
-        <instance x="816" y="1232" name="XLXI_1" orien="R0">
+        <iomarker fontsize="28" x="256" y="1520" name="Clk_50MHz" orien="R180" />
+        <iomarker fontsize="28" x="256" y="1600" name="Clk_Sys" orien="R180" />
+        <iomarker fontsize="28" x="208" y="1008" name="PS2_Clk" orien="R180" />
+        <iomarker fontsize="28" x="208" y="1072" name="PS2_Data" orien="R180" />
+        <instance x="560" y="1232" name="XLXI_1" orien="R0">
         </instance>
-        <branch name="XLXN_77(7:0)">
-            <wire x2="1296" y1="1008" y2="1008" x1="1200" />
-            <wire x2="1296" y1="1008" y2="1104" x1="1296" />
-            <wire x2="1488" y1="1104" y2="1104" x1="1296" />
+        <branch name="Clk_50MHz">
+            <wire x2="320" y1="1520" y2="1520" x1="256" />
+            <wire x2="2528" y1="1520" y2="1520" x1="320" />
+            <wire x2="2528" y1="1520" y2="1536" x1="2528" />
+            <wire x2="2752" y1="1536" y2="1536" x1="2528" />
+            <wire x2="560" y1="1136" y2="1136" x1="320" />
+            <wire x2="320" y1="1136" y2="1520" x1="320" />
         </branch>
-        <branch name="XLXN_78">
-            <wire x2="1424" y1="1136" y2="1136" x1="1200" />
-            <wire x2="1488" y1="976" y2="976" x1="1424" />
-            <wire x2="1424" y1="976" y2="1136" x1="1424" />
+        <branch name="Clk_Sys">
+            <wire x2="336" y1="1600" y2="1600" x1="256" />
+            <wire x2="2688" y1="1600" y2="1600" x1="336" />
+            <wire x2="2752" y1="1600" y2="1600" x1="2688" />
+            <wire x2="560" y1="1200" y2="1200" x1="336" />
+            <wire x2="336" y1="1200" y2="1600" x1="336" />
         </branch>
-        <branch name="XLXN_79">
-            <wire x2="1440" y1="1200" y2="1200" x1="1200" />
-            <wire x2="1488" y1="1040" y2="1040" x1="1440" />
-            <wire x2="1440" y1="1040" y2="1200" x1="1440" />
+        <branch name="DAC_CLR">
+            <wire x2="3248" y1="1152" y2="1152" x1="3200" />
         </branch>
-        <instance x="1488" y="1136" name="XLXI_3" orien="R0">
+        <branch name="DAC_CS">
+            <wire x2="3248" y1="1088" y2="1088" x1="3200" />
+        </branch>
+        <branch name="SPI_SCK">
+            <wire x2="3248" y1="1024" y2="1024" x1="3200" />
+        </branch>
+        <branch name="SPI_SS_B">
+            <wire x2="3248" y1="1216" y2="1216" x1="3200" />
+        </branch>
+        <branch name="AMP_CS">
+            <wire x2="3248" y1="1280" y2="1280" x1="3200" />
+        </branch>
+        <branch name="AD_CONV">
+            <wire x2="3248" y1="1344" y2="1344" x1="3200" />
+        </branch>
+        <branch name="SF_CE0">
+            <wire x2="3248" y1="1408" y2="1408" x1="3200" />
+        </branch>
+        <branch name="FPGA_INIT_B">
+            <wire x2="3248" y1="1472" y2="1472" x1="3200" />
+        </branch>
+        <branch name="SPI_MISO">
+            <wire x2="3248" y1="960" y2="960" x1="3200" />
+        </branch>
+        <branch name="SPI_MOSI">
+            <wire x2="3248" y1="896" y2="896" x1="3200" />
+        </branch>
+        <instance x="2752" y="1440" name="XLXI_2" orien="R0">
         </instance>
+        <iomarker fontsize="28" x="3248" y="960" name="SPI_MISO" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1152" name="DAC_CLR" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1088" name="DAC_CS" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="896" name="SPI_MOSI" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1024" name="SPI_SCK" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1216" name="SPI_SS_B" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1280" name="AMP_CS" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1344" name="AD_CONV" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1408" name="SF_CE0" orien="R0" />
+        <iomarker fontsize="28" x="3248" y="1472" name="FPGA_INIT_B" orien="R0" />
+        <instance x="1504" y="976" name="XLXI_8" orien="R0">
+        </instance>
+        <branch name="SDC_MOSI">
+            <wire x2="1968" y1="304" y2="304" x1="1936" />
+        </branch>
+        <iomarker fontsize="28" x="1968" y="304" name="SDC_MOSI" orien="R0" />
+        <branch name="SDC_SCK">
+            <wire x2="1968" y1="368" y2="368" x1="1936" />
+        </branch>
+        <iomarker fontsize="28" x="1968" y="368" name="SDC_SCK" orien="R0" />
+        <branch name="SDC_SS">
+            <wire x2="1968" y1="432" y2="432" x1="1936" />
+        </branch>
+        <iomarker fontsize="28" x="1968" y="432" name="SDC_SS" orien="R0" />
+        <branch name="SDC_MISO">
+            <wire x2="1968" y1="240" y2="240" x1="1936" />
+        </branch>
+        <iomarker fontsize="28" x="1968" y="240" name="SDC_MISO" orien="R0" />
     </sheet>
 </drawing>

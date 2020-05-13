@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey_isim_beh.exe" -prj "D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey_beh.prj" "work.testForPianoKey" 
+-intstyle "ise" -incremental -o "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForPianoKey_isim_beh.exe" -prj "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForPianoKey_beh.prj" "work.testForPianoKey" 

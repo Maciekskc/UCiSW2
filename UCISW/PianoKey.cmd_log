@@ -1,2 +1,11 @@
 vhdtdtfi -lib work Keyboard.vhd -prj UCISW -o PianoKey.spl -module PianoKey -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e PianoKey.spl C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoKey.sym 
+vhdtdtfi -lib work Keyboard.vhd -prj UCISW -o PianoKey.spl -module PianoKey -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PianoKey.spl C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoKey.sym 
+vhdtdtfi -prj UCISW -o C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoKey.vhi -module PianoKey -template E:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Keyboard.vhd 
+vhdtdtfi -lib work Keyboard.vhd -prj UCISW -o PianoKey.spl -module PianoKey -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PianoKey.spl C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoKey.sym 
+vhdtdtfi -lib work Keyboard.vhd -prj UCISW -o PianoKey.spl -module PianoKey -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PianoKey.spl C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoKey.sym 
+vhdtdtfi -lib work Keyboard.vhd -prj UCISW -o PianoKey.spl -module PianoKey -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PianoKey.spl C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/PianoKey.sym 
