@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/xst"
-elaborate
--ifn Keyboard.prj
--ifmt mixed

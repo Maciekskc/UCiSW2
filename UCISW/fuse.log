@@ -1,20 +1,20 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForGenerator_isim_beh.exe" -prj "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForGenerator_beh.prj" "work.testForGenerator" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey_isim_beh.exe -prj D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey_beh.prj work.testForPianoKey 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/Generator.vhd" into library work
-Parsing VHDL file "C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForGenerator.vhd" into library work
+Parsing VHDL file "D:/PWr/UCISW_2/UCiSW2/UCISW/Keyboard.vhd" into library work
+Parsing VHDL file "D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity Generator [generator_default]
-Compiling architecture behavior of entity testforgenerator
+Compiling package std_logic_arith
+Compiling architecture behavioral of entity PianoKey [pianokey_default]
+Compiling architecture behavior of entity testforpianokey
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: System nie mo¿e odnale æ okre lonej  cie¿ki, "isim\testForGenerator_isim_beh.exe.sim\libPortability.dll".
-Compiled 5 VHDL Units
-Built simulation executable C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/testForGenerator_isim_beh.exe
-Fuse Memory Usage: 29516 KB
-Fuse CPU Usage: 405 ms
+Compiled 6 VHDL Units
+Built simulation executable D:/PWr/UCISW_2/UCiSW2/UCISW/testForPianoKey_isim_beh.exe
+Fuse Memory Usage: 33992 KB
+Fuse CPU Usage: 1187 ms

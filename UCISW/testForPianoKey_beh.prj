@@ -1,0 +1,2 @@
+vhdl work "Keyboard.vhd"
+vhdl work "testForPianoKey.vhd"

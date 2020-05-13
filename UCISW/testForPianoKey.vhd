@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF testForPianoKey IS
          F0 : IN  std_logic;
          In_key : IN  std_logic_vector(7 downto 0);
          K_rdy : IN  std_logic;
-         FreqOUT : OUT  std_logic_vector(3 downto 0)
+         FName : OUT  std_logic_vector(7 downto 0)
         );
     END COMPONENT;
     
@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF testForPianoKey IS
    signal K_rdy : std_logic := '0';
 
  	--Outputs
-   signal FreqOUT : std_logic_vector(3 downto 0);
+   signal FName : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -73,7 +73,7 @@ BEGIN
           F0 => F0,
           In_key => In_key,
           K_rdy => K_rdy,
-          FreqOUT => FreqOUT
+          FName => FName
         );
 
    -- Clock process definitions

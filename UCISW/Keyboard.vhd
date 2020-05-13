@@ -36,12 +36,12 @@ entity PianoKey is
            F0        : in  STD_LOGIC;
            In_key   : in  STD_LOGIC_VECTOR(7 downto 0);
            K_rdy     : in  STD_LOGIC;
-           FreqOUT   : out STD_LOGIC_VECTOR(3 downto 0));
+           FName   : out STD_LOGIC_VECTOR(7 downto 0));
 end PianoKey;
 
 architecture Behavioral of PianoKey is
 	signal tmp 			: integer; 
-   type state_type is ( DEF, A, W, S, E, D, F, T, G, Y, H, U, J, K );
+   type state_type is ( DEF, A, W, S, E, D, F, T, G, Y, H, U, J );
    signal state, next_state : state_type;
 begin
 Mng : process( Clk, tmp )
@@ -84,9 +84,7 @@ StMch : process( state, In_key, K_rdy, tmp )
             elsif K_rdy = '1' and In_key = X"3C" then
                next_state <= U;
             elsif K_rdy = '1' and In_key = X"3B" then
-               next_state <= J;      
-            elsif K_rdy = '1' and In_key = X"42" then
-               next_state <= K;                  
+               next_state <= J;                       
             elsif K_rdy = '1' then
                next_state <= DEF;
             end if;
@@ -137,11 +135,7 @@ StMch : process( state, In_key, K_rdy, tmp )
          when J =>
             if F0 = '1' then
                next_state <= DEF;
-            end if;
-         when K =>
-            if F0 = '1' then
-               next_state <= DEF;
-            end if;                     
+            end if;                    
            
       end case;
 end process StMch;
@@ -150,33 +144,31 @@ OutPr : process ( state )
    begin
       case state is
          when A =>
-            FreqOUT <= conv_std_logic_vector(1,4);
+            FName <= "01000001";
          when W =>
-            FreqOUT <= conv_std_logic_vector(2,4);
+            FName <= "01010111";
          when S =>
-            FreqOUT <= conv_std_logic_vector(3,4);
+            FName <= "01010011";
          when E =>
-            FreqOUT <= conv_std_logic_vector(4,4);
+            FName <= "01000101";
          when D =>
-            FreqOUT <= conv_std_logic_vector(5,4);
+            FName <= "01000100";
          when F =>
-            FreqOUT <= conv_std_logic_vector(6,4);
+            FName <= "01000110";
          when T =>
-            FreqOUT <= conv_std_logic_vector(7,4);
+            FName <= "01010100";
          when G =>
-            FreqOUT <= conv_std_logic_vector(8,4);
+            FName <= "01000111";
          when Y =>
-            FreqOUT <= conv_std_logic_vector(9,4);
+            FName <= "01011001";
          when H =>
-            FreqOUT <= conv_std_logic_vector(10,4);
+            FName <= "01001000";
          when U =>
-            FreqOUT <= conv_std_logic_vector(11,4);
+            FName <= "01010101";
          when J =>
-            FreqOUT <= conv_std_logic_vector(12,4);
-         when K =>
-            FreqOUT <= conv_std_logic_vector(13,4);
+            FName <= "01001010";
          when DEF =>
-            FreqOUT <= conv_std_logic_vector(0,4);
+            FName <= "00000000";
          end case;
    end process OutPr;
 
