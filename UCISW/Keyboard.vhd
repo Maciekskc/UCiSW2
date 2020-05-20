@@ -36,7 +36,8 @@ entity PianoKey is
            F0        : in  STD_LOGIC;
            In_key   : in  STD_LOGIC_VECTOR(7 downto 0);
            K_rdy     : in  STD_LOGIC;
-           FName   : out STD_LOGIC_VECTOR(7 downto 0));
+           FName   : out STD_LOGIC_VECTOR(7 downto 0);
+			  Start     : out  STD_LOGIC);
 end PianoKey;
 
 architecture Behavioral of PianoKey is
@@ -171,6 +172,8 @@ OutPr : process ( state )
             FName <= "00000000";
          end case;
    end process OutPr;
+
+Start <= '0' when state = DEF else '1';
 
 end Behavioral;
 

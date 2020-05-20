@@ -23,6 +23,8 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="FSM_SendSamples.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="FSM_SendSamples.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PianoKey.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="PianoKey.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PianoKey.stx"/>
@@ -47,6 +49,11 @@
     <transform xil_pn:end_ts="1589384922" xil_pn:in_ck="-684695142863927475" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1589384922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Generator.vhd"/>
       <outfile xil_pn:name="Keyboard.vhd"/>
       <outfile xil_pn:name="testForGenerator.vhd"/>
@@ -69,7 +76,11 @@
     <transform xil_pn:end_ts="1589384922" xil_pn:in_ck="-684695142863927475" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1589384922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Generator.vhd"/>
       <outfile xil_pn:name="Keyboard.vhd"/>
       <outfile xil_pn:name="testForGenerator.vhd"/>
@@ -78,8 +89,10 @@
     <transform xil_pn:end_ts="1589385367" xil_pn:in_ck="-684695142863927475" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2275895921622971804" xil_pn:start_ts="1589385360">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>

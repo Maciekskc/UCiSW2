@@ -1,0 +1,2 @@
+vhdtdtfi -lib work FSM_SendSamples.vhd -prj UCISW -o FSM_SendSamples.spl -module FSM_SendSamples -template E:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e FSM_SendSamples.spl C:/Users/macie/OneDrive/Pulpit/Uczelnia/Semestr6/UCiSW/UCISW/FSM_SendSamples.sym 
